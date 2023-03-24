@@ -9,6 +9,21 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* The header and footer have  */
+
+header,
+footer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* This is to make sure the text keeps the same font as its parent */
+
+h1,
+h2,
+p {
+    font-family: inherit    
+}
+
 header {
     padding: 20px;
     background-color: #2a607c;
@@ -17,10 +32,10 @@ header {
 
 header h1 {
     display: inline-block;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
     font-size: 48px;
 }
+
+/* This is to make the "seo" of "horiseon" a different color. */
 
 header h1 .seo {
     color: #d9dcd6;
@@ -51,6 +66,8 @@ p {
     font-size: 16px;
 }
 
+/* Here is the large main image */
+
 .hero {
     height: 800px;
     width: 100%;
@@ -71,11 +88,15 @@ p {
     margin-left: 25px;
 }
 
+/* 'main' is the left colomn, which contains 3 'articles' with headers and images */
+
 main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+
+/* 'aside' is the small right colomn, which contains 3 'articles' with headers and images */
 
 aside {
     margin-right: 20px;
@@ -87,7 +108,6 @@ aside {
     background-color: #2589bd;
 }
 
-
 main article {
     margin-bottom: 20px;
     padding: 50px;
@@ -95,6 +115,8 @@ main article {
     background-color: #0072bb;
     color: #ffffff;
 }
+
+/* Styles for the main articles */
 
 main article h2 {
     margin-bottom: 20px;
@@ -104,6 +126,8 @@ main article h2 {
 main article img {
     max-height: 200px;
 }
+
+/* Styles for the aside articles */
 
 aside article {
     margin-bottom: 32px;
@@ -121,6 +145,8 @@ aside article img {
     max-width: 150px;
 }
 
+/* Style for the footer, which includes the copyright. */
+
 footer {
     padding: 30px;
     clear: both;
@@ -129,11 +155,4 @@ footer {
 
 footer h2 {
     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
-}
-
-footer p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
 }
