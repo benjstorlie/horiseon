@@ -1,18 +1,33 @@
-# horiseon
-Refactoring for accessibility
+# Horiseon Market Research Page
+
+## Description
+
+The goal was to refactor the given code, aiming for accessiblity and clarity.
+
+I learned about the many different considerations for alt text and how a screen reader interprets differently written code.
+
+## Installation
+
+Here is a link to my GitHub Pages site: https://benstorlie.github.io/horiseon/
+
+## Usage
+
+Here is a screenshot of the webpage.
+
+![Here is a screenshot](./assets/images/website-screenshot.png)
 
 ## Comments about my Choices
-Here are some specific decisions I made, and the reasoning behind them.  I don't want someone to think that these choices were arbitrary or that I overlooked something thoughtlessly.
+Here are some specific decisions I made, and the reasoning behind them.  I don't want someone to think that these choices were arbitrary or that I overlooked something thoughtlessly.  The following mostly came from notes to myself, so it might not be compelete.
 
 1. Alt text
-    - I found a lot of interesting guidelines for how to write alt tags depending on the purpose of the image.  I found that the images included in this page either fall into the gray zone between [decorative] [1] and [informative] [2], or they are definitely decorative.
-    - I thought that this article was interesting: ["When can a web author use null alt text"] [3]. It discusses why or why not someone would opt for null text, depending on the purpose of the image.  Ultimately, it is up to the author.
+    - I found a lot of interesting guidelines for how to write alt tags depending on the purpose of the image.  I found that the images included in this page either fall into the gray zone between [decorative][1] and [informative][2], or they are definitely decorative.
+    - I thought that this article was interesting: ["When can a web author use null alt text"][3]. It discusses why or why not someone would opt for null text, depending on the purpose of the image.  Ultimately, it is up to the author.
     - Icons
         - I decided that the icons were definitely in the decorative category.  Their purpose is "eye candy" to separate and emphasize the headings in the right section.
     - Large Background Image
-        - My choice is to bring it into the `html` from `css`, and to give it a short alt text, as it is conveying an impression
+        - My choice, for simplicity's sake, and to ensure the image behaves the same as it did originally, was to add `role=img` and an `aria-label` to the `div`.
         - The large image is styled as a background to an otherwise empty `div`.  So it is not really *behind* anything, as a background would be.
-        - This article, ["Alternate text for background images: Considerations and techniques"] [4], was useful, and the takeaway was:
+        - This article, ["Alternate text for background images: Considerations and techniques"][4], was useful, and the takeaway was:
 
         > - Try not to use CSS for important informational images.
         > - For ambient images that are CSS, it is a courtesy to provide alternate text. When doing so, place image in its own empty `<span>` with an `aria-label` and `role="img"`.This is also true, in a situation where CSS must be used for information content.
